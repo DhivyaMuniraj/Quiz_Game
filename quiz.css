@@ -1,0 +1,203 @@
+.body{
+  
+  padding: 0px;
+  margin:0px;
+  background:linear-gradient(45deg,blueviolet,rgb(57, 10, 57));
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh
+} 
+.heading_container{
+    text-shadow:0px 1px 7px rgb(195, 194, 194);
+   
+    color:white;
+    background-color:rgb(61, 35, 92);
+    text-align: center;
+   justify-content: center;
+   padding: 60px;
+
+    
+
+}
+.front_para{
+    color: rgb(170, 167, 167);
+    font-size: 33px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-style: italic; */
+    text-align: center;
+    /* padding: 30px; */
+    line-height: 65px;
+    justify-content: center;
+}
+.play_button{
+    animation: blinkingText 1.5s infinite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-style: italic; */
+    padding: 13px;
+    border: 0;
+    color: rgb(202, 194, 194);;
+    font-size: 15px;
+    background-color: black;
+}
+
+@keyframes blinkingText {
+   
+    
+    50% {
+        background-color: rgb(9, 9, 64);
+        color:  rgb(202, 194, 194);
+        /* opacity: .5; */
+    }
+   
+}
+.icons_div{
+    width: fit-content;
+    height: 100vh;
+    background-color: rgb(249, 249, 249);
+    
+}
+.icons_div ul{
+   
+    align-items: center;
+    list-style:none;
+    padding:0px 20px 20px 20px;
+}
+.icons_li{
+    padding-top: 20px;
+}
+.icon_setting{
+    padding-top:20px
+}
+.mode_div{
+    background-color: rgb(225, 220, 220);
+   text-align: center;
+    border-radius: 15px;
+    display: none;
+}
+.icon_setting:hover .mode_div{
+    display:list-item;
+}
+.mode_div button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+.active{
+    color:azure;
+    background-color: rgb(18, 73, 18);
+}
+.count_down{
+    float: right;
+    border:2px solid black;
+    margin: 5px;
+    padding:9px;
+    background:linear-gradient(red,black);
+    color: white;
+}
+
+
+
+                            /* quiz page */
+#quiz_body{
+    color:black;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    display: flex; 
+    
+}
+
+.quiz_container{
+   position: relative;
+    opacity:0.8;
+   
+    background: linear-gradient(#FF512F , #DD2476);
+   
+    border-radius: 20px;
+    justify-content: center;
+    width:500px;
+    height: auto;
+
+}
+.quiz_head{
+    padding:50px;
+}
+.quiz_head h1{
+    text-align: center;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.quiz_head ul{
+    padding: 0;
+    list-style-type: none;
+}
+.quiz_head ul li{
+    padding: 8px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.quiz_head ul li label{
+    cursor: pointer;
+}
+.button_container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+   
+}
+.button_container button{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background:linear-gradient(rgb(45, 43, 43),#04adc4);
+    width:40%;
+    padding: 15px;
+    display: block;
+}
+.button_container button:hover{
+    background:linear-gradient(rgb(45, 43, 43),#04adc4);
+}
+.button_container button:focus{
+    background:linear-gradient(rgb(45, 43, 43),rgb(22, 132, 22));
+}
+#after_submit{
+    font-style: oblique;
+    display: none;
+    float: left;
+    background: linear-gradient(#FF512F , #DD2476);
+    border-radius: 20px;
+    height: 70vh;
+    width:500px;
+    font-size: 20px;
+   text-align: center;
+    
+}
+.reload_btn:hover{
+    background:linear-gradient(rgb(45, 43, 43),#04adc4);
+}
+.reload_btn:focus{
+    background:linear-gradient(rgb(45, 43, 43),rgb(22, 132, 22));
+}
+.reload_btn{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background:linear-gradient(rgb(45, 43, 43),#04adc4);
+    width:40%;
+    padding: 15px;
+    display: block;
+    margin: auto;
+}
+#picture{
+    width:375px;
+    height:235px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=”utf-8″>
+<title>Select Tag</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body id="quiz_body">
+    <audio src="bg_sound.mp3" id="my_audio" loop="loop"></audio>
+<div id="quiz" class="quiz_container">
+    <button id="quiz_timer" class="count_down">
+        <div class="count_down_word">
+        1:00
+    </div>
+    </button>
+    <div class="quiz_head">
+
+        <h1 id="head">Question</h1>
+        <ul>
+            <li>
+                <input type="radio" id="a" name="name" class="answer">
+                <label for="a" id="option_a" for="a">Option a</label>
+            </li>
+            <li>
+                <input type="radio" id="b" name="name" class="answer">
+                <label for="b" id="option_b">Option b</label>
+            </li>
+            <li>
+                <input type="radio" id="c" name="name" class="answer">
+                <label for="c"id="option_c">Option c</label>
+            </li>
+            <li>
+                <input type="radio" id="d" name="name" class="answer">
+                <label for="d" id="option_d">Option d</label>
+            </li>
+        </ul>
+        <div class="button_container">
+            <button id="submit_btn" onclick="final_submit()">Submit</button>
+            <button id="submit_btn" onclick="next_question()">Next</button>  
+        </div>
+    </div>
+   
+   
+</div>
+        <div id="after_submit">
+        <p id="messages"></p>
+        <p id="number_correct"></p>
+        <img id="picture">
+        <p></p>
+        <button onclick="location.reload()" class="reload_btn">Play Again</button>
+        </div>
+
+</body>
+<script src="quiz.js"></script>
+</html>
